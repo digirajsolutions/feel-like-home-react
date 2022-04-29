@@ -144,8 +144,8 @@ button {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 85px;
-  background-color: #ffffff;
+  height: 70px;
+  background-color: #0093ab;
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -154,13 +154,13 @@ button {
 
 .navbarNav {
   width: 100%;
-  margin-top: 0.75rem;
+  margin-top: 1rem;
   overflow-y: hidden;
 }
 
 .navbarListItems {
   margin: 0;
-  padding: 0;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -172,13 +172,19 @@ button {
   flex-direction: column;
   align-items: center;
 }
+.navbarListItem p {
+  font-size: 1rem;
+  margin: 0;
+  padding-top: 0.25rem;
+  font-weight: 600;
+}
 
 .navbarListItemName,
 .navbarListItemNameActive {
   margin-top: 0.25rem;
   font-size: 14px;
-  font-weight: 600;
-  color: #8f8f8f;
+  font-weight: 800;
+  color: #4a4a4a;
 }
 .navbarListItemNameActive {
   color: #2c2c2c;
