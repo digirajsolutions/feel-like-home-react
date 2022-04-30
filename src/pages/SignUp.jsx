@@ -5,6 +5,7 @@ import {
   createUserWithEmailAndPassword,
   updateProfile,
 } from 'firebase/auth'
+import { setDoc, doc, serverTimestamp } from 'firebase/firestore'
 import { db } from '../firebase.config'
 import { ReactComponent as ArrowRightIcon } from '../assets/svg/keyboardArrowRightIcon.svg'
 import visibilityIcon from '../assets/svg/visibilityIcon.svg'
@@ -30,6 +31,7 @@ function SignUp() {
     e.preventDefault()
 
     try {
+      //creating user and adding to firebase users
       const auth = getAuth()
       const userCredential = await createUserWithEmailAndPassword(
         auth,
@@ -39,6 +41,14 @@ function SignUp() {
       const user = userCredential.user
 
       updateProfile(auth.currentUser, { displayName: name })
+
+      //saving users to firestore database in users collection
+      const formDataCopy = { ...formData }
+      delete formDataCopy.password
+      formDataCopy.timestamp = serverTimestamp()
+
+      await setDoc(doc(db, 'users', user.uid), formDataCopy)
+
       navigate('/')
     } catch (error) {
       console.log(error)
