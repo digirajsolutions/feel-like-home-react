@@ -651,13 +651,13 @@ button {
 .changePersonalDetails {
   cursor: pointer;
   font-weight: 600;
-  color: #00cc66;
+  color: #e62766;
 }
 
 .profileCard {
   background-color: #ffffff;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.2);
   max-width: 500px;
 }
@@ -674,9 +674,10 @@ button {
 .profileEmailActive,
 .profileNameActive {
   all: unset;
-  margin: 0.3rem 0;
+  margin: 0.3rem 1rem;
   font-weight: 600;
-  width: 100%;
+  width: 90%;
+  padding: 0.5rem;
 }
 .profileNameActive {
   background-color: rgba(44, 44, 44, 0.1);
