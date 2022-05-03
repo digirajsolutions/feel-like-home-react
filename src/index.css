@@ -524,8 +524,8 @@ button {
 
 .discountPrice {
   padding: 0.25rem 0.5rem;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #00cc66;
+  color: #000;
   border-radius: 1rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -534,11 +534,11 @@ button {
 
 .listingType {
   padding: 0.25rem 0.5rem;
-  background-color: #00cc66;
+  background-color: #e62766;
   color: #ffffff;
   border-radius: 2rem;
   display: inline;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.8rem;
   margin-right: 1rem;
 }
