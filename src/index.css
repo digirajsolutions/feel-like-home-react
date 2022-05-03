@@ -524,6 +524,7 @@ button {
 
 .discountPrice {
   padding: 0.25rem 0.5rem;
+  margin-right: 1rem;
   background-color: #00cc66;
   color: #000;
   border-radius: 1rem;

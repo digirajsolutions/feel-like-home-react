@@ -64,9 +64,13 @@ function Listing() {
         </p>
 
         {listing.offer && (
-          <p className='discountPrice'>
-            ₹{listing.regularPrice - listing.discountedPrice} discount !!!
-          </p>
+          <>
+            <p className='discountPrice'>In Offer</p>
+            <p className='discountPrice'>
+              ₹{listing.regularPrice - listing.discountedPrice} discount added
+              above !!!
+            </p>
+          </>
         )}
 
         <ul className='listingDetailsList'>
