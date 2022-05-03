@@ -9,7 +9,7 @@ html::-webkit-scrollbar {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #f2f4f8;
+  background-color: #f3f4f8;
   margin: 0;
   box-sizing: border-box;
 }
@@ -59,7 +59,7 @@ button {
 
 .primaryButton {
   cursor: pointer;
-  background: #00cc66;
+  background: #e62766;
   border-radius: 1rem;
   padding: 0.85rem 2rem;
   color: #ffffff;
@@ -91,7 +91,8 @@ button {
 .listingDetails,
 .category,
 .explore {
-  margin: 1rem;
+  margin: 2rem;
+  padding-left: 3rem;
 }
 @media (min-width: 1024px) {
   .pageContainer,
@@ -135,8 +136,8 @@ button {
 }
 
 .pageHeader {
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -737,7 +738,7 @@ button {
 .formInputSmall,
 .formInputFile,
 .formButtonActive {
-  padding: 0.9rem 3rem;
+  padding: 0.5rem 2.5rem;
   background-color: #ffffff;
   font-weight: 600;
   border-radius: 1rem;
@@ -748,7 +749,7 @@ button {
   align-items: center;
 }
 .formButtonActive {
-  background-color: #00cc66;
+  background-color: #e62766;
   color: #ffffff;
 }
 
@@ -768,12 +769,12 @@ button {
 .formInputSmall,
 .formInputFile {
   margin-right: 3rem;
-  padding: 0.9rem 0.7rem;
+  padding: 0.5rem 0.7rem;
   text-align: center;
 }
 
 .formInputName {
-  padding: 0.9rem 1rem;
+  padding: 0.5rem 1rem;
   width: 90%;
   max-width: 326px;
 }
@@ -803,7 +804,7 @@ button {
   width: 100%;
 }
 .formInputFile::-webkit-file-upload-button {
-  background-color: #00cc66;
+  background-color: #e62766;
   border: none;
   color: #ffffff;
   font-weight: 600;
